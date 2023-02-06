@@ -10,12 +10,12 @@ export const listReducer = (state = initialState, action) => {
         case ADD:
             return {
                 ...state,
-                usersList: [...state.usersList, action.user],
+                usersList: [...state.usersList, action.payload.user],
             }
         case DELETE:
             return {
                 ...state,
-                usersList: state.usersList.filter(user => user.id !== action.id),
+                usersList: state.usersList.filter(user => user.id !== action.payload.id),
             }
         default:
             return state
