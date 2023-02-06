@@ -1,15 +1,15 @@
-export const ADD_BASKET = 'BASKET/ADD_BASKET'
-export const DELETE_BASKET = 'BASKET/DELETE_BASKET'
+export const ADD_PRODUCT = 'BASKET/ADD_BASKET'
+export const DELETE_PRODUCT = 'BASKET/DELETE_BASKET'
 
 export const addProduct = product => ({
-    type: ADD_BASKET,
+    type: ADD_PRODUCT,
     payload: {
         product,
     },
 })
 
 export const removeProduct = prodId => ({
-    type: DELETE_BASKET,
+    type: DELETE_PRODUCT,
     payload: {
         prodId,
     },

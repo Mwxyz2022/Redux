@@ -1,6 +1,6 @@
 import { SET_USER, REMOVE_USER } from './user.actions'
 
-export const userReducer = (state = null, action) => {
+const userReducer = (state = null, action) => {
     switch (action.type) {
         case SET_USER: {
             return action.payload.user
@@ -12,3 +12,5 @@ export const userReducer = (state = null, action) => {
             return state
     }
 }
+
+export default userReducer

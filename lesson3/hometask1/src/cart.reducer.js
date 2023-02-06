@@ -1,26 +1,27 @@
-import { ADD_BASKET, DELETE_BASKET } from './cart.actions'
+import { ADD_PRODUCT, DELETE_PRODUCT } from './cart.actions'
 
 const initialState = {
-    product: [],
+    products: [],
 }
 
 const cartReducer = (state = initialState, action) => {
     switch (action.type) {
-        case ADD_BASKET: {
+        case ADD_PRODUCT: {
             return {
                 ...state,
-                product: [...state.product, action.payload.product],
+                products: [...state.products, action.payload.product],
             }
         }
-        case DELETE_BASKET: {
-            const newList = state.product.filter(product => product.id !== action.payload.prodId)
+        case DELETE_PRODUCT: {
+            const newList = state.products.filter(user => user.id !== action.payload.productId)
             return {
                 ...state,
-                productLis: newList,
+                products: newList,
             }
         }
         default:
             return state
     }
 }
+
 export default cartReducer
