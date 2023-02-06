@@ -1,4 +1,4 @@
-export const LANGUAGE = 'CHANGE/LANGUAGE'
+import { LANGUAGE } from './language.actions'
 
 const languageReducer = (state = 'en', action) => {
     switch (action.type) {

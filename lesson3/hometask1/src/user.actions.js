@@ -1,4 +1,5 @@
-import { SET_USER, REMOVE_USER } from './user.reducer'
+export const SET_USER = 'USER/SET'
+export const REMOVE_USER = 'USER/REMOVE'
 
 export const setUser = user => ({
     type: SET_USER,

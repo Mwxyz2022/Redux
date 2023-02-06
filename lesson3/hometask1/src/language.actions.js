@@ -1,10 +1,8 @@
-import { LANGUAGE } from './language.reducer'
+export const LANGUAGE = 'CHANGE/LANGUAGE'
 
-const setLanguage = language => ({
+export const setLanguage = language => ({
     type: LANGUAGE,
     payload: {
         language,
     },
 })
-
-export default setLanguage

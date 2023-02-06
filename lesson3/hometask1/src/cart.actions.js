@@ -1,4 +1,5 @@
-import { ADD_BASKET, DELETE_BASKET } from './cart.reducer'
+export const ADD_BASKET = 'BASKET/ADD_BASKET'
+export const DELETE_BASKET = 'BASKET/DELETE_BASKET'
 
 export const addProduct = product => ({
     type: ADD_BASKET,

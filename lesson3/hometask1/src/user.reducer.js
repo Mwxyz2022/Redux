@@ -1,5 +1,4 @@
-export const SET_USER = 'USER/SET'
-export const REMOVE_USER = 'USER/REMOVE'
+import { SET_USER, REMOVE_USER } from './user.actions'
 
 const userReducer = (state = null, action) => {
     switch (action.type) {
