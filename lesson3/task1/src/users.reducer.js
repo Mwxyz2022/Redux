@@ -4,12 +4,12 @@ const initialState = {
     userList: [],
 }
 
-export const usersReducer = (state = initialState, action) => {
+const usersReducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_USER: {
             return {
                 ...state,
-                userList: [...state.userList, action.payload.userData],
+                usersList: state.usersList.concat(action.payload.userData),
             }
         }
         case DELETE_USER: {
@@ -39,3 +39,5 @@ export const usersReducer = (state = initialState, action) => {
             return state
     }
 }
+
+export default usersReducer
