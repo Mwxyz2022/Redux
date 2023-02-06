@@ -1,5 +1,5 @@
-export const SET_USER = 'USER/SET'
-export const REMOVE_USER = 'USER/REMOVE'
+export const SET_USER = 'USER/SET_USER'
+export const REMOVE_USER = 'USER/REMOVE_USER'
 
 export const setUser = user => ({
     type: SET_USER,
