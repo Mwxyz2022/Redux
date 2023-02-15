@@ -20,5 +20,4 @@ export const fetchUserData = userName =>
         getUserData(userName).then(userData => {
             dispatch(userDataRecieved(userData))
         })
-        this.state.userName = ''
     }
